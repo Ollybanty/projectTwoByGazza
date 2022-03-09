@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="">
+        <p class="title-text">Bits<span>Please</span></p>
+      </div>
+      <div class="half-circle">
+        <img src="./images/half-circle.png" alt="" />
+      </div>
+    </div>
+
+    <!-- mobile view  -->
+
+   
+       <div class="mobile-wrapper">
+           <div class="image-wrapper">
+               <img id="mobileImg" src="./images/mobile-view-bg.png" alt="">
+               <p class="text-title">Bits<span>Please</span></p>
+           </div>
+        
+           <div class="down-circle">
+               <img src="./images/down-circle.png" alt="">
+           </div>
+       </div>
+   
+
+    <!-- Sign up form  -->
+    <section class="signupFormWrapper">
+     <div id="signupContainer">
+        <p class="signup-text">Sign up</p> 
+        <form class="signup-form" action="">
+         <label for="first name">First name</label>
+         <input type="text" placeholder="First name" />
+         <label for="Last name">Last name</label>
+         <input type="text" placeholder="Last name" />
+         <label for="email">Email</label>
+         <input type="email" placeholder="Enter email" />
+         <label for="password">Password</label>
+         <input type="password" placeholder="Enter password" />
+         <button type="submit">Log in</button>
+        
+        </div>
+       </form>
+       <div class="social-class">
+        <div class="facebook">
+          <div class="fblogo-wrapper">
+            <img class="fb-logo" src="./images/facebook-logo.png" alt="" />
+          </div>
+          <div class="content"><p>Continue with Facebook</p></div>
+        </div>
+        <div class="google">
+          <div class="google-wrap">
+            <img src="./images/google-icon.png" alt="" />
+          </div>
+          <div class="google-text">
+            <p>Continue with Google</p>
+          </div>
+        </div>
+      </div>
+     <div onclick="openTray()" class="pleaseSignIn">
+        <p  class="bottom-text ">Already a member? <a   href="#"> Sign in</a></p>
+     </div>
+      <p class="bottom-text">
+        Forgot password? <a href="#">Reset password</a>
+      </p>
+    </div>
+    </section>
+    <!-- End of sign up form -->
+
+    <!-- beginning of log in form -->
+
+    <section class="logInwrapper">
+        <div class="logInContainer">
+            <p class="login-text">Log in</p>
+            <form class="logInForm" action="">
+                <div class="connect-with-google">
+                    <img src="./images/google-icon.png" alt=""><span><p>Sign in with google</p></span>
+
+                </div>
+                <div class="connect-with-facebook">
+                    <img src="./images/Fb-logo-two.png" alt=""><span><p>Sign up with facebook</p></span>
+
+                </div>
+                <div>
+                    <p class="or">or</p>
+
+                </div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter email" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </form>
+            <button id="logInForm-button" type="submit">Log in</button>
+            <p class="bottom-text">Not a member yet? <a href="#">Get started</a></p>
+            <p class="bottom-text">Forgot password? <a href="#">Reset password</a></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
